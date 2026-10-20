@@ -1,0 +1,14 @@
+{
+  "name": "sprout-social",
+  "version": "0.1.1",
+  "description": "Read-only access to Sprout Social profiles, posts, tags and analytics through a remote MCP server.",
+  "author": {
+    "name": "Andrew Wragg"
+  },
+  "mcpServers": "./.mcp.json",
+  "interface": {
+    "displayName": "Sprout Social",
+    "shortDescription": "Read Sprout Social profiles, posts, tags and analytics",
+    "category": "Productivity"
+  }
+}

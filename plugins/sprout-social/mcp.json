@@ -3,17 +3,7 @@
   "mcpServers": {
     "sprout-social": {
       "type": "streamable-http",
-      "url": "https://sprout-social-mcp-worker.b2cmarketingservices.workers.dev/mcp",
-      "extensions": {
-        "com.openai": {
-          "auth": {
-            "type": "oauth",
-            "client": {
-              "mode": "dcr"
-            }
-          }
-        }
-      }
+      "url": "https://sprout-social-mcp-worker.b2cmarketingservices.workers.dev/mcp"
     }
   }
 }

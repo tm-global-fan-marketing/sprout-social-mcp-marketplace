@@ -23,8 +23,12 @@ and shows an approval page that asks for the **approval passcode**. Get it from 
     plugins/sprout-social/plugin.json    plugin manifest
     plugins/sprout-social/mcp.json       the remote MCP server and its OAuth settings
 
-## Known uncertainty
+## Plugin layout
 
-The `extensions["com.openai"].auth` block in `mcp.json` follows OpenAI's plugin docs as summarised,
-but the exact schema was not available to verify. If installation fails on it, delete the `extensions`
-block, reinstall, and let ChatGPT discover OAuth from the server's `401` challenge instead.
+The ChatGPT/Codex desktop app loads plugins from `.codex-plugin/plugin.json`, whose `mcpServers` field points at
+`.mcp.json`. The root `plugin.json` / `mcp.json` are the portable copies of the same content; keep them identical.
+
+## Authentication
+
+`.mcp.json` carries no auth settings: the app discovers OAuth from the server's `401` challenge and registers itself
+(Dynamic Client Registration).
