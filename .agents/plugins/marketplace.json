@@ -1,0 +1,20 @@
+{
+  "name": "sprout-social-marketplace",
+  "interface": {
+    "displayName": "Sprout Social"
+  },
+  "plugins": [
+    {
+      "name": "sprout-social",
+      "source": {
+        "source": "local",
+        "path": "./plugins/sprout-social"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    }
+  ]
+}

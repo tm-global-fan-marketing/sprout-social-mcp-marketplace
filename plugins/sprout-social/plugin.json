@@ -1,0 +1,9 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "sprout-social",
+  "version": "0.1.0",
+  "description": "Read-only access to Sprout Social profiles, posts, tags and analytics through a remote MCP server.",
+  "author": {
+    "name": "Andrew Wragg"
+  }
+}
